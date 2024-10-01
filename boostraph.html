@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f8ff; /* Warna latar belakang halaman */
+        }
+        h2 {
+            color: #007bff; /* Warna judul */
+        }
+        label {
+            color: #333; /* Warna label */
+        }
+        .btn-primary {
+            background-color: #28a745; /* Warna tombol */
+            border-color: #28a745;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Halaman Registrasi</h2>
+        <form>
+            <div class="form-group">
+                <label for="firstName">Nama Depan</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Masukkan nama depan" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Nama Belakang</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Masukkan nama belakang" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" class="form-control" id="address" placeholder="Masukkan alamat" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="birthdate" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="gender">Jenis Kelamin</label>
+                <select class="form-control" id="gender" style="background-color: #e9ecef;">
+                    <option>Laki-laki</option>
+                    <option>Perempuan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Masukkan username" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password" style="background-color: #e9ecef;">
+            </div>
+            <div class="form-group">
+                <label for="photo">Unggah Foto</label>
+                <input type="file" class="form-control-file" id="photo">
+            </div>
+            <button type="submit" class="btn btn-primary">Daftar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
