@@ -23,48 +23,69 @@
             background-color: #218838;
             border-color: #1e7e34;
         }
+        .form-control {
+            background-color: #e9ecef; /* Warna latar input */
+        }
     </style>
 </head>
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Halaman Registrasi</h2>
         <form>
-            <div class="form-group">
-                <label for="firstName">Nama Depan</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Masukkan nama depan" style="background-color: #e9ecef;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="firstName">Nama Depan</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Masukkan nama depan">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="lastName">Nama Belakang</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Masukkan nama belakang">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="lastName">Nama Belakang</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Masukkan nama belakang" style="background-color: #e9ecef;">
-            </div>
+            
             <div class="form-group">
                 <label for="address">Alamat</label>
-                <input type="text" class="form-control" id="address" placeholder="Masukkan alamat" style="background-color: #e9ecef;">
+                <input type="text" class="form-control" id="address" placeholder="Masukkan alamat">
             </div>
-            <div class="form-group">
-                <label for="birthdate">Tanggal Lahir</label>
-                <input type="date" class="form-control" id="birthdate" style="background-color: #e9ecef;">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="birthdate">Tanggal Lahir</label>
+                        <input type="date" class="form-control" id="birthdate">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin</label>
+                        <select class="form-control" id="gender">
+                            <option>Laki-laki</option>
+                            <option>Perempuan</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="gender">Jenis Kelamin</label>
-                <select class="form-control" id="gender" style="background-color: #e9ecef;">
-                    <option>Laki-laki</option>
-                    <option>Perempuan</option>
-                </select>
-            </div>
+
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Masukkan username" style="background-color: #e9ecef;">
+                <input type="text" class="form-control" id="username" placeholder="Masukkan username">
             </div>
+
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="Masukkan password" style="background-color: #e9ecef;">
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password">
             </div>
+
             <div class="form-group">
                 <label for="photo">Unggah Foto</label>
                 <input type="file" class="form-control-file" id="photo">
             </div>
-            <button type="submit" class="btn btn-primary">Daftar</button>
+
+            <button type="submit" class="btn btn-primary btn-block">Daftar</button>
         </form>
     </div>
 
